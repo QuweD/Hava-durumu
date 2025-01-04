@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hava Durumu Uygulaması</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="neon-text">Made by NEO</h1>
+  </header>
+
+  <main>
+    <div class="weather-container">
+      <h2>Hava Durumu</h2>
+
+      <div class="location-selector">
+        <label for="city">Şehir Seç:</label>
+        <select id="city">
+          <option value="">Şehir Seçin</option>
+        </select>
+
+        <label for="district">İlçe Seç:</label>
+        <select id="district" disabled>
+          <option value="">Önce Şehir Seçin</option>
+        </select>
+      </div>
+
+      <button id="getWeather" disabled>Hava Durumunu Getir</button>
+
+      <div id="weather-info">
+        <h3 id="location"></h3>
+        <p id="date"></p>
+        <p id="description"></p>
+        <img id="icon" src="" alt="Weather Icon" />
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
